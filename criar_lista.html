@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_lista.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="add_produto.js" defer></script>
+
+    <title>Criar_lista</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="navbar_btn">
+            <li class="btn_menu"><a href="lista.html">VER LISTA</a></li>
+            <li class="btn_menu" id="HOME"><a href="">HOME</a></li>
+            <li class="btn_menu" ><a href="calcular.html">CALCULAR</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img id="imagem" src="imagens/logo_pequena-removebg-preview.png">
+    </header>
+    <main>
+        <p>Crie aqui a sua lista de compras!</p>
+
+        <div id="produto">
+            <input id="Produto_add" type="text" placeholder="PRODUTO">
+            <input id="quant_add" type="number" placeholder="QNT" >
+            <button type="submit" id="adicionar" onclick="adicionarItem()">
+                <i class="fa-thin fa-plus"></i>                
+            </button> 
+        
+        </div>
+
+        <div>
+
+            <div id="edits">
+                <a href="calcular.html"><button class="finish">
+                    <i class="fa-solid fa-check"></i>
+                    </button>
+                </a>
+                <a href="principal.html"><button class="remove">
+                    <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </a>
+
+
+            </div>
+            <div id="itens">
+                <ul id="lista_PRODUTOS">
+            
+                </ul>
+                <ul id="lista_QUANTIDADES">
+                         
+                </ul>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>By Iury Barreto Sales</p>
+    </footer>
+    
+
+</body>
+</html>

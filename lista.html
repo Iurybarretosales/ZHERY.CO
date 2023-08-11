@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_lista.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="add_produto.js" defer></script>
+
+    <title>Lista</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="navbar_btn">
+            <li class="btn_menu"><a href="criar_lista.html">CRIAR LISTA</a></li>
+            <li class="btn_menu" id="HOME"><a href="principal.html">HOME</a></li>
+            <li class="btn_menu"><a href="calcular.html">CALCULAR</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img id="imagem" src="imagens/logo_pequena-removebg-preview.png">
+    </header>
+    <main>
+        <p>Aqui esta sua lista!</p>
+
+
+        <div id="filter">
+            <select id="filter-select">
+                <option value="all">Todos</option>
+                <option value="add">Adicionados</option>
+                <option value="falta">Falta</option>
+
+            </select>
+        </div>
+
+        <div id="itens">
+            <ul id="lista_PRODUTOS">
+                <li> <p>teste1</p>
+                    <button class="edit">
+                        <i class="fa-solid fa-pen" id="icon"></i>
+                    </button>
+                </li>
+                
+
+            
+            </ul>
+            <ul id="lista_QUANTIDADES">
+                <li>55
+                    <button class="edit">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                </li>
+                
+                
+
+            </ul>
+            <ul id="lista_VALOR">
+                <li>3,50
+                    <button class="edit">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                </li>
+                <li>3,50
+                    <button class="edit">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+
+        <div id="total_soma">
+            <h3>TOTAL = <p id="total">1550,00</p> </h3>
+        </div>
+ 
+        <div>
+            <a href="criar_lista.html"><input type="button" value="Adcionar Itens"></a>
+            <a href="calcular.html"><input type="button" value="Adicionar valor"></a>
+            <a href="principal.html"><input type="button" value="Finalizar"></a>
+
+            
+        </div>
+    </main>
+    <footer>
+        <p>By Iury Barreto Sales</p>
+    </footer>
+    
+</body>
+</html>

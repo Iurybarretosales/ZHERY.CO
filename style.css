@@ -1,0 +1,47 @@
+html {
+    background-color: gray;
+}
+
+body {
+    display: block;
+    background-color: white;
+    height: 100%;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#imagem {
+    width: 150px;
+}
+
+
+input {
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 150px;
+    border-radius: 15px;
+    border:solid 1px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.445);
+}
+
+input:hover {
+    border-color: rgb(2, 153, 2);
+    background-color: rgba(128, 128, 128, 0.336);
+}
+
+header{
+    display: block;
+    text-align: center;
+}
+main {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
